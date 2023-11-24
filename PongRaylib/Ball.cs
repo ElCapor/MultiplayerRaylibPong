@@ -42,11 +42,11 @@ namespace PongRaylib
         {
             if (!CheckCollisionCircleRec(position + new Vector2(radius), radius, mapBounds))
             {
-                SetVelocity(velocity * -1);
+                onBallCollide?.Invoke(this, new BallCollideEvent(mapBounds));
             }
             else if (CheckCollisionCircleRec(position, radius, p1.GetRect()))
             {
-                SetVelocity(velocity * -1);
+                onBallCollide?.Invoke(this, new BallCollideEvent(p1));
             }
         }
 
