@@ -2,7 +2,7 @@
 using System.Numerics;
 using static Raylib_cs.Raylib;
 
-class Player
+public class Player
 {
     int id = -1;
 
@@ -68,5 +68,10 @@ class Player
     public void Draw()
     {
         DrawRectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y, Color.RED);
+    }
+
+    public Rectangle GetRect()
+    {
+        return new Rectangle(position.X, position.Y, size.X, size.Y);
     }
 }

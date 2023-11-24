@@ -1,6 +1,8 @@
 ﻿using static Raylib_cs.Raylib;
 using static Raylib_cs.KeyboardKey;
 using Raylib_cs;
+using PongRaylib;
+using System.Numerics;
 
 static void HandleInput(ref Player p)
 {
@@ -19,17 +21,19 @@ static void HandleInput(ref Player p)
 }
 
 Player p = new();
-
+Ball b = new(new Vector2(400 , 300), new Vector2(0,0));
 InitWindow(800, 600, "Pong");
 SetTargetFPS(60);
-
+b.InitialBounce();
 while (!WindowShouldClose())
 {
     p.Update();
+    b.Update(p, new Rectangle(0, 0, 800, 600));
     HandleInput(ref p);
     BeginDrawing();
     ClearBackground(Color.BLACK);
     p.Draw();
+    b.Draw();
     EndDrawing();
 }
 
