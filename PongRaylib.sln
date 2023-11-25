@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongRaylib", "PongRaylib\PongRaylib.csproj", "{2DF2CC4E-10F8-4EB9-8149-7053A2346A28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PongRaylib", "PongRaylib\PongRaylib.csproj", "{2DF2CC4E-10F8-4EB9-8149-7053A2346A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongClient", "PongClient\PongClient.csproj", "{667C4325-4E43-4452-8E69-6B35622A7754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongServer", "PongServer\PongServer.csproj", "{164B94E6-6477-4FDB-BA2D-A2BFEBB88686}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2DF2CC4E-10F8-4EB9-8149-7053A2346A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF2CC4E-10F8-4EB9-8149-7053A2346A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF2CC4E-10F8-4EB9-8149-7053A2346A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667C4325-4E43-4452-8E69-6B35622A7754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667C4325-4E43-4452-8E69-6B35622A7754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667C4325-4E43-4452-8E69-6B35622A7754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667C4325-4E43-4452-8E69-6B35622A7754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{164B94E6-6477-4FDB-BA2D-A2BFEBB88686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{164B94E6-6477-4FDB-BA2D-A2BFEBB88686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{164B94E6-6477-4FDB-BA2D-A2BFEBB88686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{164B94E6-6477-4FDB-BA2D-A2BFEBB88686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

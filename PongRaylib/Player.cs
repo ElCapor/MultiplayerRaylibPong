@@ -4,8 +4,6 @@ using static Raylib_cs.Raylib;
 
 public class Player
 {
-    int id = -1;
-
     Vector2 position;
     Vector2 velocity;
     Vector2 size;
